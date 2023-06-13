@@ -255,7 +255,7 @@ const blood_donation_club = [
     blood_group: "AB+",
     location: "Patuakhali",
     phone_number: "0987654321",
-    last_donate: 15,
+    last_donate: 122,
     donation_list: {
       patient_1: "Roni",
       patient_2: "Robiul",
@@ -285,8 +285,10 @@ function blood_donor_filter(name, age, location, blood_group, phone_number) {
     if (donors.length > 0) {
       console.log("Matching donors:");
       donors.map((donor) => {
+        // let  is_available = (donor.last_donate >= 120)? 'Availavle': donor.last_donate - 120;
+        let is_available = donor.last_donate >= 120 ? "Yes ✅ " : `❌ No!, Wait for - ${120 - donor.last_donate} days`;
         console.log(
-          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Last donate: ${donor.last_donate} day ago`
+          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Is Available for donate: ${is_available}`
         );
       });
     } else {
@@ -303,8 +305,9 @@ function blood_donor_filter(name, age, location, blood_group, phone_number) {
     if (donors.length > 0) {
       console.log("Matching donors:");
       donors.map((donor) => {
+        let is_available = donor.last_donate >= 120 ? "Yes ✅ " : `❌ No!, Wait for - ${120 - donor.last_donate} days`;
         console.log(
-          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Last donate: ${donor.last_donate} day ago`
+          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Is Available for donate: ${is_available}`
         );
       });
     } else {
@@ -320,8 +323,9 @@ function blood_donor_filter(name, age, location, blood_group, phone_number) {
     if (donors.length > 0) {
       console.log("Matching donors:");
       donors.map((donor) => {
+        let is_available = donor.last_donate >= 120 ? "Yes ✅ " : `❌ No!, Wait for - ${120 - donor.last_donate} days`;
         console.log(
-          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Last donate: ${donor.last_donate} day ago`
+          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Is Available for donate: ${is_available}`
         );
       });
     } else {
@@ -337,8 +341,9 @@ function blood_donor_filter(name, age, location, blood_group, phone_number) {
     if (donors.length > 0) {
       console.log("Matching donors:");
       donors.map((donor) => {
+        let is_available = donor.last_donate >= 120 ? "Yes ✅ " : `❌ No!, Wait for - ${120 - donor.last_donate} days`;
         console.log(
-          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Last donate: ${donor.last_donate} day ago`
+          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Is Available for donate: ${is_available}`
         );
       });
     } else {
@@ -355,8 +360,9 @@ function blood_donor_filter(name, age, location, blood_group, phone_number) {
     if (donors.length > 0) {
       console.log("Matching donors:");
       donors.map((donor) => {
+        let is_available = donor.last_donate >= 120 ? "Yes ✅ " : `❌ No!, Wait for - ${120 - donor.last_donate} days`;
         console.log(
-          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Last donate: ${donor.last_donate} day ago`
+          `Name: ${donor.name}, Age: ${donor.age}, location: ${donor.location}, Blood Group: ${donor.blood_group}, Phone Number: ${donor.phone_number}, Is Available for donate: ${is_available}`
         );
       });
     } else {
