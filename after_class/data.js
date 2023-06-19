@@ -19,7 +19,7 @@ const members = [
         id: 2,
         name: "Robin",
         age: 22,
-        donate_date: "Februaty 18, 2022",
+        donate_date: "June 18, 2023",
       },
     ],
   },
