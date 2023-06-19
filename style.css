@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.row{
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+a{
+    background-color: #ddd;
+    padding:20px 80px;
+    display: block;
+    margin: 5px;
+    font-size: 17px;
+    border-radius: 3px;
+    color: black;
+    transition: .4s;
+}
+a:hover, .col:first-child a{
+    background-color: black;
+    color: white;
+}
