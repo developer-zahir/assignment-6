@@ -8,9 +8,7 @@ How do you want to search?
 🔸 Location
 🔸 Blood Group
 🔸 Phone number
-`)
-  .toLowerCase()
-  .trim();
+`).toLowerCase().trim();
 
 if (filter_type === "id") {
   // get data form user
